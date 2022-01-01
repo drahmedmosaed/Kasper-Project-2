@@ -671,3 +671,99 @@ q {
     z-index: 10;
 }
 /*end quote*/
+/*start Pricing*/
+section.pricing {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+}
+
+.pricing .container .price-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+    grid-column-gap: 20px;
+    justify-content: space-around;
+
+}
+
+.pricing .container .price-list .plan {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+    background-color: #fcfcfc;
+}
+
+.pricing .container .price-list .plan .price {
+    padding: 10px;
+    line-height: 2;
+    border-top: 1px solid var(--main-color);
+    border-bottom: 1px solid var(--main-color);
+
+
+}
+.pricing .container .price-list .plan .price h2 {
+    font-weight: normal;
+    font-size: 20px;
+}
+.pricing .container .price-list .plan .price p{
+    font-weight: bold;
+    font-size: 45px;
+    position: relative;
+}
+
+.pricing .container .price-list .plan .price p:before{
+    content: "$";
+    font-size: 15px;
+    position: absolute;
+    top: 0;
+    left: 35px;
+
+}
+
+.pricing .container .price-list .plan .price p:after{
+    content: "/M";
+    font-size: 20px;
+    margin-left: 5px;
+}
+
+.pricing .container .price-list .plan .features {
+    line-height: 3;
+    border-bottom: 1px solid var(--main-color);
+    }
+.pricing .container .price-list .plan .features li{
+    position: relative;
+}
+.pricing .container .price-list .plan .features li:not(:last-child):after{
+    content: "";
+    border-bottom: 1px solid var(--main-color);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 50%;
+    transform: translatex(-50%);
+}
+.pricing .container .price-list .plan>p {
+    padding: 15px;
+    border: 1px solid var(--main-color);
+    width: fit-content;
+    margin: 10px auto;
+
+}
+
+.pricing .container .contact {
+    text-align: center;
+    padding-top: 30px;
+    line-height: 3;
+}
+
+.pricing .container .contact span {
+    border: 1px solid var(--main-color);
+    padding: 5px 10px;
+    margin-top: 15px;
+    color: white;
+    font-weight: bold;
+    background-color: var(--main-color);
+}
+
+/*end pricing*/
